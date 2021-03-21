@@ -31,18 +31,5 @@ ProductTag.init(
   }
 )
 
-Product.hasOne(ProductTag, {
-  sourceKey: 'id',
-  foreignKey: 'product_id',
-  onDelete: 'cascade',
-  hooks: true
-})
-
-Tag.hasOne(ProductTag, {
-  sourceKey: 'id',
-  foreignKey: 'tag_id',
-  onDelete: 'cascade',
-  hooks: true
-})
 
 module.exports = ProductTag

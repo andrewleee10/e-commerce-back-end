@@ -42,11 +42,5 @@ Product.init(
   }
 )
 
-Category.hasOne(Product, {
-  sourceKey: 'id', 
-  foreignKey: 'category_id', 
-  onDelete: 'cascade', 
-  hooks: true
-})
 
 module.exports = Product
